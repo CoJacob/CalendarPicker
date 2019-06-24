@@ -27,7 +27,7 @@ A lightweight calendar Picker for the iOS platform
 
 @param picker picker
 @param startDate 开始时间
-@param endDate 介绍时间
+@param endDate 结束时间
 */
 - (void)calendarPicker:(CGCalendarPicker *)picker didSelectedRangeModeDateWithStartDate: (NSDate *)startDate endDate: (NSDate *)endDate;
 
