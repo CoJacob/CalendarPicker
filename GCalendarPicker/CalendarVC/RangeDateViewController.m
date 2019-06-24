@@ -78,7 +78,9 @@
 #pragma mark - CGCalendarPickerDelegate
 
 - (void)calendarPicker:(CGCalendarPicker *)picker didSelectedRangeModeDateWithStartDate: (NSDate *)startDate endDate: (NSDate *)endDate {
-    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    self.title = [NSString stringWithFormat:@"%@--%@",[dateFormatter stringFromDate:startDate],[dateFormatter stringFromDate:endDate]];
 }
 
 
