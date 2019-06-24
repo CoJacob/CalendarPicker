@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		641AFA2922C0759100C74006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA2822C0759100C74006 /* AppDelegate.m */; };
+		641AFA2C22C0759100C74006 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA2B22C0759100C74006 /* ViewController.m */; };
+		641AFA2F22C0759100C74006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641AFA2D22C0759100C74006 /* Main.storyboard */; };
+		641AFA3122C0759300C74006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641AFA3022C0759300C74006 /* Assets.xcassets */; };
+		641AFA3422C0759300C74006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641AFA3222C0759300C74006 /* LaunchScreen.storyboard */; };
+		641AFA3722C0759300C74006 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA3622C0759300C74006 /* main.m */; };
+		641AFA4122C0759300C74006 /* GCalendarPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA4022C0759300C74006 /* GCalendarPickerTests.m */; };
+		641AFA4C22C0759300C74006 /* GCalendarPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA4B22C0759300C74006 /* GCalendarPickerUITests.m */; };
+		641AFA7522C075DB00C74006 /* CGBaseDatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA5E22C075DB00C74006 /* CGBaseDatePresenter.m */; };
+		641AFA7622C075DB00C74006 /* CGRangeDatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6022C075DB00C74006 /* CGRangeDatePresenter.m */; };
+		641AFA7722C075DB00C74006 /* CGSingleDatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6222C075DB00C74006 /* CGSingleDatePresenter.m */; };
+		641AFA7822C075DB00C74006 /* CGCalendarBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6422C075DB00C74006 /* CGCalendarBottomView.m */; };
+		641AFA7922C075DB00C74006 /* NSDate+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6622C075DB00C74006 /* NSDate+IndexPath.m */; };
+		641AFA7A22C075DB00C74006 /* CGDateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6A22C075DB00C74006 /* CGDateHeaderView.m */; };
+		641AFA7B22C075DB00C74006 /* CGRangeDateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6B22C075DB00C74006 /* CGRangeDateCollectionViewCell.m */; };
+		641AFA7C22C075DB00C74006 /* CGSingleDateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6C22C075DB00C74006 /* CGSingleDateCollectionViewCell.m */; };
+		641AFA7D22C075DB00C74006 /* NSDate+CGAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA6F22C075DB00C74006 /* NSDate+CGAddition.m */; };
+		641AFA7E22C075DB00C74006 /* CGCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA7122C075DB00C74006 /* CGCalendarWeekView.m */; };
+		641AFA7F22C075DB00C74006 /* CGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA7222C075DB00C74006 /* CGCalendarView.m */; };
+		641AFA8022C075DB00C74006 /* CGCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA7322C075DB00C74006 /* CGCalendarPicker.m */; };
+		641AFA8422C097BE00C74006 /* SingleDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA8322C097BE00C74006 /* SingleDateViewController.m */; };
+		641AFA8722C097CC00C74006 /* RangeDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AFA8622C097CC00C74006 /* RangeDateViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		641AFA3D22C0759300C74006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 641AFA1C22C0759100C74006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 641AFA2322C0759100C74006;
+			remoteInfo = GCalendarPicker;
+		};
+		641AFA4822C0759300C74006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 641AFA1C22C0759100C74006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 641AFA2322C0759100C74006;
+			remoteInfo = GCalendarPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		641AFA2422C0759100C74006 /* GCalendarPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCalendarPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		641AFA2722C0759100C74006 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		641AFA2822C0759100C74006 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		641AFA2A22C0759100C74006 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		641AFA2B22C0759100C74006 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		641AFA2E22C0759100C74006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		641AFA3022C0759300C74006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		641AFA3322C0759300C74006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		641AFA3522C0759300C74006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		641AFA3622C0759300C74006 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		641AFA3C22C0759300C74006 /* GCalendarPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCalendarPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		641AFA4022C0759300C74006 /* GCalendarPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCalendarPickerTests.m; sourceTree = "<group>"; };
+		641AFA4222C0759300C74006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		641AFA4722C0759300C74006 /* GCalendarPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCalendarPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		641AFA4B22C0759300C74006 /* GCalendarPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCalendarPickerUITests.m; sourceTree = "<group>"; };
+		641AFA4D22C0759300C74006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		641AFA5A22C075DB00C74006 /* CGCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCalendarPicker.h; sourceTree = "<group>"; };
+		641AFA5B22C075DB00C74006 /* CGCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCalendarView.h; sourceTree = "<group>"; };
+		641AFA5C22C075DB00C74006 /* CGCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCalendarWeekView.h; sourceTree = "<group>"; };
+		641AFA5E22C075DB00C74006 /* CGBaseDatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGBaseDatePresenter.m; sourceTree = "<group>"; };
+		641AFA5F22C075DB00C74006 /* CGSingleDatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSingleDatePresenter.h; sourceTree = "<group>"; };
+		641AFA6022C075DB00C74006 /* CGRangeDatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGRangeDatePresenter.m; sourceTree = "<group>"; };
+		641AFA6122C075DB00C74006 /* CGBaseDatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGBaseDatePresenter.h; sourceTree = "<group>"; };
+		641AFA6222C075DB00C74006 /* CGSingleDatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSingleDatePresenter.m; sourceTree = "<group>"; };
+		641AFA6322C075DB00C74006 /* CGRangeDatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGRangeDatePresenter.h; sourceTree = "<group>"; };
+		641AFA6422C075DB00C74006 /* CGCalendarBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCalendarBottomView.m; sourceTree = "<group>"; };
+		641AFA6522C075DB00C74006 /* NSDate+CGAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CGAddition.h"; sourceTree = "<group>"; };
+		641AFA6622C075DB00C74006 /* NSDate+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+IndexPath.m"; sourceTree = "<group>"; };
+		641AFA6822C075DB00C74006 /* CGSingleDateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSingleDateCollectionViewCell.h; sourceTree = "<group>"; };
+		641AFA6922C075DB00C74006 /* CGRangeDateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGRangeDateCollectionViewCell.h; sourceTree = "<group>"; };
+		641AFA6A22C075DB00C74006 /* CGDateHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGDateHeaderView.m; sourceTree = "<group>"; };
+		641AFA6B22C075DB00C74006 /* CGRangeDateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGRangeDateCollectionViewCell.m; sourceTree = "<group>"; };
+		641AFA6C22C075DB00C74006 /* CGSingleDateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSingleDateCollectionViewCell.m; sourceTree = "<group>"; };
+		641AFA6D22C075DB00C74006 /* CGDateHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDateHeaderView.h; sourceTree = "<group>"; };
+		641AFA6E22C075DB00C74006 /* CGCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCalendar.h; sourceTree = "<group>"; };
+		641AFA6F22C075DB00C74006 /* NSDate+CGAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CGAddition.m"; sourceTree = "<group>"; };
+		641AFA7022C075DB00C74006 /* CGCalendarBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCalendarBottomView.h; sourceTree = "<group>"; };
+		641AFA7122C075DB00C74006 /* CGCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCalendarWeekView.m; sourceTree = "<group>"; };
+		641AFA7222C075DB00C74006 /* CGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCalendarView.m; sourceTree = "<group>"; };
+		641AFA7322C075DB00C74006 /* CGCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCalendarPicker.m; sourceTree = "<group>"; };
+		641AFA7422C075DB00C74006 /* NSDate+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+IndexPath.h"; sourceTree = "<group>"; };
+		641AFA8222C097BE00C74006 /* SingleDateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleDateViewController.h; sourceTree = "<group>"; };
+		641AFA8322C097BE00C74006 /* SingleDateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleDateViewController.m; sourceTree = "<group>"; };
+		641AFA8522C097CC00C74006 /* RangeDateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeDateViewController.h; sourceTree = "<group>"; };
+		641AFA8622C097CC00C74006 /* RangeDateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangeDateViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		641AFA2122C0759100C74006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641AFA3922C0759300C74006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641AFA4422C0759300C74006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		641AFA1B22C0759100C74006 = {
+			isa = PBXGroup;
+			children = (
+				641AFA2622C0759100C74006 /* GCalendarPicker */,
+				641AFA3F22C0759300C74006 /* GCalendarPickerTests */,
+				641AFA4A22C0759300C74006 /* GCalendarPickerUITests */,
+				641AFA2522C0759100C74006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		641AFA2522C0759100C74006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA2422C0759100C74006 /* GCalendarPicker.app */,
+				641AFA3C22C0759300C74006 /* GCalendarPickerTests.xctest */,
+				641AFA4722C0759300C74006 /* GCalendarPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		641AFA2622C0759100C74006 /* GCalendarPicker */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA5922C075DB00C74006 /* CGCalendar */,
+				641AFA2722C0759100C74006 /* AppDelegate.h */,
+				641AFA2822C0759100C74006 /* AppDelegate.m */,
+				641AFA2A22C0759100C74006 /* ViewController.h */,
+				641AFA2B22C0759100C74006 /* ViewController.m */,
+				641AFA2D22C0759100C74006 /* Main.storyboard */,
+				641AFA3022C0759300C74006 /* Assets.xcassets */,
+				641AFA3222C0759300C74006 /* LaunchScreen.storyboard */,
+				641AFA3522C0759300C74006 /* Info.plist */,
+				641AFA3622C0759300C74006 /* main.m */,
+				641AFA8122C097A900C74006 /* CalendarVC */,
+			);
+			path = GCalendarPicker;
+			sourceTree = "<group>";
+		};
+		641AFA3F22C0759300C74006 /* GCalendarPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA4022C0759300C74006 /* GCalendarPickerTests.m */,
+				641AFA4222C0759300C74006 /* Info.plist */,
+			);
+			path = GCalendarPickerTests;
+			sourceTree = "<group>";
+		};
+		641AFA4A22C0759300C74006 /* GCalendarPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA4B22C0759300C74006 /* GCalendarPickerUITests.m */,
+				641AFA4D22C0759300C74006 /* Info.plist */,
+			);
+			path = GCalendarPickerUITests;
+			sourceTree = "<group>";
+		};
+		641AFA5922C075DB00C74006 /* CGCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA6E22C075DB00C74006 /* CGCalendar.h */,
+				641AFA5A22C075DB00C74006 /* CGCalendarPicker.h */,
+				641AFA7322C075DB00C74006 /* CGCalendarPicker.m */,
+				641AFA5B22C075DB00C74006 /* CGCalendarView.h */,
+				641AFA7222C075DB00C74006 /* CGCalendarView.m */,
+				641AFA5C22C075DB00C74006 /* CGCalendarWeekView.h */,
+				641AFA7122C075DB00C74006 /* CGCalendarWeekView.m */,
+				641AFA7022C075DB00C74006 /* CGCalendarBottomView.h */,
+				641AFA6422C075DB00C74006 /* CGCalendarBottomView.m */,
+				641AFA6522C075DB00C74006 /* NSDate+CGAddition.h */,
+				641AFA6F22C075DB00C74006 /* NSDate+CGAddition.m */,
+				641AFA7422C075DB00C74006 /* NSDate+IndexPath.h */,
+				641AFA6622C075DB00C74006 /* NSDate+IndexPath.m */,
+				641AFA5D22C075DB00C74006 /* Presenter */,
+				641AFA6722C075DB00C74006 /* Cell */,
+			);
+			path = CGCalendar;
+			sourceTree = "<group>";
+		};
+		641AFA5D22C075DB00C74006 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA6122C075DB00C74006 /* CGBaseDatePresenter.h */,
+				641AFA5E22C075DB00C74006 /* CGBaseDatePresenter.m */,
+				641AFA5F22C075DB00C74006 /* CGSingleDatePresenter.h */,
+				641AFA6222C075DB00C74006 /* CGSingleDatePresenter.m */,
+				641AFA6022C075DB00C74006 /* CGRangeDatePresenter.m */,
+				641AFA6322C075DB00C74006 /* CGRangeDatePresenter.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		641AFA6722C075DB00C74006 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA6D22C075DB00C74006 /* CGDateHeaderView.h */,
+				641AFA6A22C075DB00C74006 /* CGDateHeaderView.m */,
+				641AFA6822C075DB00C74006 /* CGSingleDateCollectionViewCell.h */,
+				641AFA6B22C075DB00C74006 /* CGRangeDateCollectionViewCell.m */,
+				641AFA6922C075DB00C74006 /* CGRangeDateCollectionViewCell.h */,
+				641AFA6C22C075DB00C74006 /* CGSingleDateCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		641AFA8122C097A900C74006 /* CalendarVC */ = {
+			isa = PBXGroup;
+			children = (
+				641AFA8222C097BE00C74006 /* SingleDateViewController.h */,
+				641AFA8322C097BE00C74006 /* SingleDateViewController.m */,
+				641AFA8522C097CC00C74006 /* RangeDateViewController.h */,
+				641AFA8622C097CC00C74006 /* RangeDateViewController.m */,
+			);
+			path = CalendarVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		641AFA2322C0759100C74006 /* GCalendarPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641AFA5022C0759300C74006 /* Build configuration list for PBXNativeTarget "GCalendarPicker" */;
+			buildPhases = (
+				641AFA2022C0759100C74006 /* Sources */,
+				641AFA2122C0759100C74006 /* Frameworks */,
+				641AFA2222C0759100C74006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCalendarPicker;
+			productName = GCalendarPicker;
+			productReference = 641AFA2422C0759100C74006 /* GCalendarPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		641AFA3B22C0759300C74006 /* GCalendarPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641AFA5322C0759300C74006 /* Build configuration list for PBXNativeTarget "GCalendarPickerTests" */;
+			buildPhases = (
+				641AFA3822C0759300C74006 /* Sources */,
+				641AFA3922C0759300C74006 /* Frameworks */,
+				641AFA3A22C0759300C74006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				641AFA3E22C0759300C74006 /* PBXTargetDependency */,
+			);
+			name = GCalendarPickerTests;
+			productName = GCalendarPickerTests;
+			productReference = 641AFA3C22C0759300C74006 /* GCalendarPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		641AFA4622C0759300C74006 /* GCalendarPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641AFA5622C0759300C74006 /* Build configuration list for PBXNativeTarget "GCalendarPickerUITests" */;
+			buildPhases = (
+				641AFA4322C0759300C74006 /* Sources */,
+				641AFA4422C0759300C74006 /* Frameworks */,
+				641AFA4522C0759300C74006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				641AFA4922C0759300C74006 /* PBXTargetDependency */,
+			);
+			name = GCalendarPickerUITests;
+			productName = GCalendarPickerUITests;
+			productReference = 641AFA4722C0759300C74006 /* GCalendarPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		641AFA1C22C0759100C74006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Namegold;
+				TargetAttributes = {
+					641AFA2322C0759100C74006 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					641AFA3B22C0759300C74006 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 641AFA2322C0759100C74006;
+					};
+					641AFA4622C0759300C74006 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 641AFA2322C0759100C74006;
+					};
+				};
+			};
+			buildConfigurationList = 641AFA1F22C0759100C74006 /* Build configuration list for PBXProject "GCalendarPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 641AFA1B22C0759100C74006;
+			productRefGroup = 641AFA2522C0759100C74006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				641AFA2322C0759100C74006 /* GCalendarPicker */,
+				641AFA3B22C0759300C74006 /* GCalendarPickerTests */,
+				641AFA4622C0759300C74006 /* GCalendarPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		641AFA2222C0759100C74006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641AFA3422C0759300C74006 /* LaunchScreen.storyboard in Resources */,
+				641AFA3122C0759300C74006 /* Assets.xcassets in Resources */,
+				641AFA2F22C0759100C74006 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641AFA3A22C0759300C74006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641AFA4522C0759300C74006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		641AFA2022C0759100C74006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641AFA7F22C075DB00C74006 /* CGCalendarView.m in Sources */,
+				641AFA7722C075DB00C74006 /* CGSingleDatePresenter.m in Sources */,
+				641AFA2C22C0759100C74006 /* ViewController.m in Sources */,
+				641AFA7D22C075DB00C74006 /* NSDate+CGAddition.m in Sources */,
+				641AFA8422C097BE00C74006 /* SingleDateViewController.m in Sources */,
+				641AFA3722C0759300C74006 /* main.m in Sources */,
+				641AFA2922C0759100C74006 /* AppDelegate.m in Sources */,
+				641AFA7B22C075DB00C74006 /* CGRangeDateCollectionViewCell.m in Sources */,
+				641AFA7E22C075DB00C74006 /* CGCalendarWeekView.m in Sources */,
+				641AFA7922C075DB00C74006 /* NSDate+IndexPath.m in Sources */,
+				641AFA8722C097CC00C74006 /* RangeDateViewController.m in Sources */,
+				641AFA7622C075DB00C74006 /* CGRangeDatePresenter.m in Sources */,
+				641AFA7522C075DB00C74006 /* CGBaseDatePresenter.m in Sources */,
+				641AFA7822C075DB00C74006 /* CGCalendarBottomView.m in Sources */,
+				641AFA7C22C075DB00C74006 /* CGSingleDateCollectionViewCell.m in Sources */,
+				641AFA8022C075DB00C74006 /* CGCalendarPicker.m in Sources */,
+				641AFA7A22C075DB00C74006 /* CGDateHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641AFA3822C0759300C74006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641AFA4122C0759300C74006 /* GCalendarPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641AFA4322C0759300C74006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641AFA4C22C0759300C74006 /* GCalendarPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		641AFA3E22C0759300C74006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 641AFA2322C0759100C74006 /* GCalendarPicker */;
+			targetProxy = 641AFA3D22C0759300C74006 /* PBXContainerItemProxy */;
+		};
+		641AFA4922C0759300C74006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 641AFA2322C0759100C74006 /* GCalendarPicker */;
+			targetProxy = 641AFA4822C0759300C74006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		641AFA2D22C0759100C74006 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				641AFA2E22C0759100C74006 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		641AFA3222C0759300C74006 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				641AFA3322C0759300C74006 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		641AFA4E22C0759300C74006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		641AFA4F22C0759300C74006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		641AFA5122C0759300C74006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GCalendarPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GCalendarPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		641AFA5222C0759300C74006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GCalendarPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GCalendarPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		641AFA5422C0759300C74006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GCalendarPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GCalendarPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCalendarPicker.app/GCalendarPicker";
+			};
+			name = Debug;
+		};
+		641AFA5522C0759300C74006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GCalendarPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GCalendarPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCalendarPicker.app/GCalendarPicker";
+			};
+			name = Release;
+		};
+		641AFA5722C0759300C74006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GCalendarPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GCalendarPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GCalendarPicker;
+			};
+			name = Debug;
+		};
+		641AFA5822C0759300C74006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GCalendarPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GCalendarPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GCalendarPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		641AFA1F22C0759100C74006 /* Build configuration list for PBXProject "GCalendarPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641AFA4E22C0759300C74006 /* Debug */,
+				641AFA4F22C0759300C74006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		641AFA5022C0759300C74006 /* Build configuration list for PBXNativeTarget "GCalendarPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641AFA5122C0759300C74006 /* Debug */,
+				641AFA5222C0759300C74006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		641AFA5322C0759300C74006 /* Build configuration list for PBXNativeTarget "GCalendarPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641AFA5422C0759300C74006 /* Debug */,
+				641AFA5522C0759300C74006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		641AFA5622C0759300C74006 /* Build configuration list for PBXNativeTarget "GCalendarPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641AFA5722C0759300C74006 /* Debug */,
+				641AFA5822C0759300C74006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 641AFA1C22C0759100C74006 /* Project object */;
+}
